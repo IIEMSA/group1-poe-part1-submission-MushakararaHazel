@@ -6,14 +6,23 @@ package part1;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.BeforeEach;
 /**
  *
  * @author lab_services_student
  */
 public class loginTest {
     
-    public loginTest() {
+    private login login;
+    
+         @BeforeEach
+     public void setUp() {
+        login = new login();
+        login.setFirstName("John");
+        login.setLastName("Doe");
+        login.setUsername("use_1");
+        login.setPassword("ValidPass1!");
+        login.setCellNumber("+27123456789");
     }
 
     @Test
