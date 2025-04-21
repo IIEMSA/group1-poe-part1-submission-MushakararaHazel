@@ -55,7 +55,7 @@ class Part1 {
         // Cell phone input and validation
         boolean validPhone = false;
         while (!validPhone) {
-            System.out.print("Enter cell phone number (with international code, e.g., +27838968976): ");
+            System.out.print("Enter cell phone number (with international code, ): ");
             String phone = scanner.nextLine();
          loginSystem.setCellNumber(phone);
             
